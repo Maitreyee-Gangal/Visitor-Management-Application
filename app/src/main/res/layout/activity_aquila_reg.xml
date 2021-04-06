@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Aquila_reg"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Switch
+            android:id="@+id/registered"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:text="Registered"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Aquila_ischeakedIN" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Token"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/Aquila_Token"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Token"/>
+
+            <ImageButton
+                android:id="@+id/Aquila_searchbtn"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/search_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/Aquila_Scanebtn"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/round_select_all_24" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperature"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/Aquila_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Temperature" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SPO2 Level"
+            android:textAllCaps="true"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/Aquila_o2Level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="SPO2 Level"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Aquila_moreInfoPanel"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:paddingLeft="10dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/Aquila_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Name"/>
+
+            <TextView
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/Aquila_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="Phone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textAllCaps="true"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/Aquila_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Address"/>
+            <ImageButton
+                android:id="@+id/takePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/camera_alt_black_24dp" />
+            <ImageView
+                android:id="@+id/visitorPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/account_box_black_24dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Aquila_IN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="IN" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Devices">
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:visibility="gone"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/hellopb"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        style="@style/SpinKitView.WanderingCubes"
+
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="@android:color/holo_blue_light"
+        />
+
+    <LinearLayout
+        android:id="@+id/mainlayoutD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list_devices"
+            android:layout_width="match_parent"
+            android:layout_height="545dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom|end">
+                <Button
+                    android:id="@+id/add_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="add device"/>
+
+                <Button
+                    android:id="@+id/update_changes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:text="Update changes" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

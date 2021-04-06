@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_devices"
+            android:icon="@drawable/devices_24"
+            android:title="Devices" />
+        <item
+            android:id="@+id/nav_blacklist"
+            android:icon="@drawable/blacklist"
+            android:title="Blacklist" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_24"
+            android:title="Profile" />
+    </group>
+</menu>

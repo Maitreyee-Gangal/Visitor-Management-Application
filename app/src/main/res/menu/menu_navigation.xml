@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_register"
+        android:title="Register"
+        android:icon="@drawable/playlist_add_black_24dp"
+        />
+
+    <item
+        android:id="@+id/nav_log"
+        android:title="Log Entery"
+        android:icon="@drawable/dashboard_black_24dp"
+        />
+    <item
+        android:id="@+id/nav_Search"
+        android:title="Search"
+        android:icon="@drawable/search_black_24dp"
+        />
+    <item
+        android:id="@+id/nav_reports"
+        android:title="Reports"
+        android:icon="@drawable/content_paste_black_24dp"
+        />
+
+</menu>
