@@ -1,2 +1,2 @@
-# Maid-Registration
+# Visitor-Management
 Visitor management system
